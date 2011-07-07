@@ -1,0 +1,20 @@
+PageWrapper: PageWrapper {
+}
+
+ListMovie: ERXD2WList {
+	entityName = "Movie";
+	dataSource = movieDataSource;
+	displayKeys = "((movieInfo, title, category, rated, dateReleased, revenue),(voteInfo, voting.numberOfVotes, voting.runningAverage, castVote))";
+}
+
+ListVideo: ERXD2WList {
+	entityName = "Video";
+	dataSource = videoDataSource;
+	displayKeys = "((movieInfo, movie.category, movie.title, movie.rated),(rentalTerms, rentalTerms.checkOutLength, rentalTerms.cost))";
+}
+
+ListRental: ERXD2WList {
+	pageConfiguration = "ListCheckedOutRental";
+	dataSource = rentalsCheckedOut;
+	displayKeys = "((rentalInfo, unit.video.movie.title, dateOut, isOverdueString),(customerInfo, customer.firstName, customer.lastName, customer.phone))";
+}

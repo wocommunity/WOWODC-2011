@@ -1,0 +1,16 @@
+PageWrapper: PageWrapper {}
+
+Dashboard: WOHyperlink {
+	pageName = "Dashboard";
+	string = "Dashboard";
+}
+
+MasterDetail: WOHyperlink {
+	pageName = "MasterDetail";
+	string = "Master-Detail";
+}
+
+MasterDetailDetail: WOHyperlink {
+	pageName = "MasterDetailDetail";
+	string = "Master-Detail-Detail";
+}

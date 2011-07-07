@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+ul#debugFlags {
+	border: 1px solid;
+	border-left: none;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	background: white;
+	opacity: 0.6;
+	width: 1em;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+}
+
+ul#debugFlags:hover {
+	opacity: 1.0;
+	width: 9em;
+}
+
+ul#debugFlags li {
+	display: block;
+	white-space: nowrap;
+}
+
+ul#debugFlags li a {
+	display: block;
+	padding: 0 0 0 1em;
+}
+
+ul#debugFlags li:hover {
+	background-color: #DDDED7;
+}

@@ -1,0 +1,17 @@
+Form: WOForm {}
+
+Vote: WOGenericElement {
+	elementName = "input";
+	type = "number";
+	name = context.elementID;
+	formValue = value;
+	min = "1";
+	max = "10";
+	step = "1";
+	style = "width: 5em;";
+}
+
+SubmitVote: WOSubmitButton {
+	action = addVote;
+	value = "Vote";
+}

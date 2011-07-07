@@ -1,0 +1,3 @@
+CastVote: CastVote {
+	movie = object;
+}

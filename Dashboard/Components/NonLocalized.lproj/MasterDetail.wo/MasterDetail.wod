@@ -1,0 +1,14 @@
+PageWrapper: PageWrapper {}
+
+MasterList: ERXD2WSelect {
+	pageConfiguration = "SelectMovie";
+	dataSource = movieDataSource;
+	displayKeys = "((movieInfo, title, category, rated, dateReleased, revenue),(voteInfo, voting.numberOfVotes, voting.runningAverage))";
+	selectedObject = selectedMovie;
+	action = movieSelected;
+}
+
+DetailInspect: ERXD2WInspect {
+	pageConfiguration = "InspectMovie";
+	object = selectedMovie;
+}

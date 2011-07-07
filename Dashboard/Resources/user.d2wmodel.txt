@@ -1,0 +1,5 @@
+(
+    100 : *true* => isEntityEditable = "true" [com.webobjects.directtoweb.BooleanAssignment],
+    100 : *true* => isEntityDeletable = "true" [com.webobjects.directtoweb.BooleanAssignment],
+    100 : ((task = 'list' or task = 'select' or task = 'inspect') and (smartAttribute.className = 'com.webobjects.foundation.NSTimestamp' or (smartAttribute.valueFactoryMethod != null and smartAttribute.factoryMethodArgumentType = 3))) => formatter = "MM/dd/yy" [com.webobjects.directtoweb.Assignment]
+)
